@@ -64,7 +64,7 @@ Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UA
 ### Linux
 
 1.  Open a terminal window.
-2.  Open the hosts file in a text editor (you can use any text editor) by typing the following line:
+2.  Open the hosts file in a text editor (assuming 'nano' is installed: you can use any text editor) by typing the following line:
 
         sudo nano /etc/hosts
 
@@ -124,3 +124,5 @@ Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UA
         dscacheutil -flushcache
 
   The new mappings should now take effect.
+  
+  **Word of caution:** Whichever your OS, be sure to remember you have tricked it into resolving a domain to a set custom ip as it very well could cause major headaches in the future, especially if you are developing.
